@@ -1,6 +1,6 @@
 # Week 1 - RPG Game Exercises
 
-## Exercise 1: Create a Player Class
+## Exercise 1: Create Player with Class and Race (Composition)
 Create a class `Player` to represent an RPG character:
 
 **Attributes:**
