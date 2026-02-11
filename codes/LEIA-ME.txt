@@ -1,0 +1,132 @@
+# 📚 EXEMPLOS PRÁTICOS DE POO - SISTEMA DE RPG
+## Curso de Engenharia de Computação - 16 Semanas
+
+Este pacote contém todos os exemplos práticos implementados em Python e C++.
+
+## 📋 ÍNDICE DE EXEMPLOS
+
+### ✅ Semana 1: Introdução à POO
+- `semana01/jogador.py` - Classe Jogador básica (Python)
+- `semana01/jogador.cpp` - Classe Jogador básica (C++)
+
+### ✅ Semana 2: Encapsulamento
+- `semana02/jogador_encapsulado.py` - Getters, Setters, Validações (Python)
+- `semana02/jogador_encapsulado.cpp` - Encapsulamento (C++)
+
+### ✅ Semana 3: Construtores e Métodos Especiais
+- `semana03/jogador_xp.py` - Sistema de XP e níveis (Python)
+
+### ✅ Semana 4: Herança - Classes de Personagem
+- `semana04/classes_personagem.py` - Guerreiro, Mago, Ladrão (Python)
+
+### ✅ Semana 5: Polimorfismo
+- `semana05/combate_polimorfico.py` - Sistema de combate polimórfico
+
+### ✅ Semana 6: Composição - Raças
+- `semana06/sistema_racas.py` - Humano, Elfo, Orc
+
+### ✅ Semana 7: Sistema de Itens
+- `semana07/sistema_itens.py` - Arma, Armadura, Consumível
+
+### ✅ Semana 8: Inventário
+- `semana08/inventario.py` - Gerenciamento de itens
+
+### ✅ Semana 9: Interfaces - Equipáveis
+- `semana09/equipaveis.py` - Sistema de equipamentos
+
+### ✅ Semana 10: Exceções
+- `semana10/excecoes_rpg.py` - Exceções customizadas
+
+### ✅ Semana 11: Factory e Singleton
+- `semana11/factory_singleton.py` - Padrões de criação
+
+### ✅ Semana 12: Observer e Strategy
+- `semana12/observer_strategy.py` - Padrões comportamentais
+
+### ✅ Semana 13: GUI Tkinter
+- `semana13/gui_tkinter.py` - Interface gráfica Python
+
+### ✅ Semana 15: Persistência
+- `semana15/save_load.py` - Save/Load com JSON
+
+## 🚀 COMO EXECUTAR
+
+### Python:
+```bash
+cd semanaXX
+python arquivo.py
+```
+
+### C++ (quando disponível):
+```bash
+cd semanaXX
+g++ -std=c++17 -o programa arquivo.cpp
+./programa
+```
+
+## 📊 PROGRESSÃO DO PROJETO
+
+Semanas 1-3: **Fundamentos** (classe base)
+Semanas 4-6: **Herança e Composição** (classes especializadas e raças)
+Semanas 7-9: **Sistemas Complexos** (itens, inventário, equipamentos)
+Semana 10: **Robustez** (tratamento de erros)
+Semanas 11-12: **Design Patterns**
+Semanas 13-14: **Interfaces Gráficas**
+Semana 15: **Persistência**
+Semana 16: **Integração Final**
+
+## 💡 DICAS PARA PROFESSORES
+
+1. Cada exemplo é **autocontido** e pode ser executado independentemente
+2. Os exemplos seguem uma **progressão pedagógica** clara
+3. Todos os códigos possuem **comentários explicativos**
+4. Há **testes práticos** em cada arquivo
+5. Compare Python vs C++ para entender diferenças de sintaxe
+
+## 📖 CONCEITOS COBERTOS
+
+✓ Classes e Objetos
+✓ Encapsulamento (private, public, protected)
+✓ Herança (simples e múltipla)
+✓ Polimorfismo
+✓ Classes Abstratas e Interfaces
+✓ Composição vs Herança
+✓ Exceções Customizadas
+✓ Design Patterns (Factory, Singleton, Observer, Strategy)
+✓ GUI (Tkinter, Qt)
+✓ Persistência (JSON)
+
+## 🎯 ENTREGAS ESPERADAS
+
+Cada semana os alunos devem entregar o código funcionando que:
+- Implementa os conceitos da semana
+- Adiciona funcionalidades ao projeto RPG
+- Está bem documentado
+- Passa nos testes básicos
+
+## 📚 MATERIAL COMPLEMENTAR
+
+- README.md - Documentação completa
+- index.html - Índice visual dos exemplos
+- Makefile - Compilação automática (C++)
+
+## 🔗 ESTRUTURA DE ARQUIVOS
+
+exemplos_rpg/
+├── README.md
+├── index.html
+├── Makefile
+├── semana01/
+│   ├── jogador.py
+│   └── jogador.cpp
+├── semana02/
+│   ├── jogador_encapsulado.py
+│   └── jogador_encapsulado.cpp
+├── ... (semanas 3-15)
+└── semana16/
+    └── rpg_completo.py
+
+---
+**Disciplina:** Programação Orientada a Objetos
+**Curso:** Engenharia de Computação
+**Duração:** 16 semanas (80 horas)
