@@ -1,4 +1,10 @@
+# --------------------------------------------------
+# Definindo classe Televisão
+# --------------------------------------------------
+
 class Television:
+
+    # construtor
     def __init__(self):
         self.__powerOn = False
         self.__muted = False
@@ -44,8 +50,18 @@ class Television:
             return self.__channel
     
     def __str__(self):
-        display = 'Power setting is currently ' + str(self._powerOn) +'\n'
-        display += 'Channel setting is currently ' + str(self._channel) +'\n'
-        display += 'Volume setting is currently ' + str(self._volume) +'\n'
-        display += 'Mute is currently ' + str(self._muted)
+        display = 'Power setting is currently ' + str(self.__powerOn) +'\n'
+        display += 'Channel setting is currently ' + str(self.__channel) +'\n'
+        display += 'Volume setting is currently ' + str(self.__volume) +'\n'
+        display += 'Mute is currently ' + str(self.__muted)
         return display
+
+# --------------------------------------------------
+# Função principal
+# --------------------------------------------------
+if __name__ == "__main__":
+    tv = Television()
+    print(type(tv))
+    print(tv)
+
+# --------------------------------------------------
