@@ -11,7 +11,7 @@ class ImagemDigital {
         int largura;
         int altura;
         int **imagem;  //imagem é uma matriz [altura x largura]
-        string canaisCor;
+        string canaisCor; //"RGB", "Gray-Scale"
         string nome;
         string extensao;
         // ... 

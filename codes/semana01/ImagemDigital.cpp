@@ -2,12 +2,26 @@
 // input/output stream
 #include <iostream>
 #include <typeinfo>
+#include <string>
 
 // necessário para chamar std::cout (print) e std::endl ('\n')
 using namespace std;
 
 // Criando uma classe puramente vazia
 class ImagemDigital {
+
+    // atributos
+    int altura, largura; // resolucao
+    string nome, extensao;
+    int canaisDeCores;
+    int **imagemDigital;
+
+    // funcoes/métodos
+    ImagemDigital();  // construtor
+    ~ImagemDigital(); // destrutor
+    void mostrar(); 
+    int** rotacionar(float angulo);
+    int** reescalar(float valor);
 
 };
 

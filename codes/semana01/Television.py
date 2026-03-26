@@ -62,6 +62,9 @@ class Television:
 if __name__ == "__main__":
     tv = Television()
     print(type(tv))
+    tv.togglePower() # liga
+    tv.toggleMute() # mutar
+    tv.togglePower() # desliga
     print(tv)
 
 # --------------------------------------------------
