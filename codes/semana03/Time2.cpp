@@ -119,6 +119,13 @@ int main(int argc, char* argv[]) {
     cout << "\nThe initial standard time is ";
     t5.printStandard();
 
+    // Construtor por copia, implícito
+    Time t6 = t5;
+    cout << "\nThe initial universal time is ";
+    t6.printUniversal();
+    cout << "\nThe initial standard time is ";
+    t6.printStandard();
+
     return 0;
 }
 
