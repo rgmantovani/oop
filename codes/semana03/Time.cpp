@@ -1,16 +1,22 @@
+// --------------------------------------------
+// --------------------------------------------
+
 #include "Time.h"
 
 #include<iostream>
-using std::cout;
-using std::endl;
-
 #include<iomanip>
-using std::setfill;
-using std::setw;
+
+using namespace std;
+
+// --------------------------------------------
+// --------------------------------------------
 
 Time::Time() {
     hour = minute = second = 0;
 }
+
+// --------------------------------------------
+// --------------------------------------------
 
 void Time::setTime(int h, int m, int s) {
     hour   = (h >= 0 && h < 24) ? h : 0; // valida horas
@@ -18,10 +24,16 @@ void Time::setTime(int h, int m, int s) {
     second = (s >= 0 && s < 60) ? s : 0;
 }
 
+// --------------------------------------------
+// --------------------------------------------
+
 void Time::printUniversal() {
     cout << setfill('0') << setw(2) << hour << ":" << setw(2) 
         << minute << ":" << setw(2) << second;
 }
+
+// --------------------------------------------
+// --------------------------------------------
 
 void Time::printStandard() {
     cout << ( ( hour == 0 || hour == 2) ? 12 : hour%12 ) << ":"
@@ -29,6 +41,8 @@ void Time::printStandard() {
         << second << (hour < 12 ? "AM" : "PM");
 }
 
+// --------------------------------------------
+// --------------------------------------------
 
 int main(int argc, char* argv[]) {
 
@@ -57,3 +71,6 @@ int main(int argc, char* argv[]) {
     
     return 0;
 }
+
+// --------------------------------------------
+// --------------------------------------------
