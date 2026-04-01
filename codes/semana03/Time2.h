@@ -2,7 +2,8 @@ class Time {
 
     public:
         Time(int = 0, int = 0, int = 0); //construtor-padrão
-        
+        Time(const Time&);
+
         void setTime(int, int, int);     // confgura hora, minuto, segundo
         void setHour(int);               // configura hora (depois da validação)
         void setMinute(int);             // configura minutos (depois da validação

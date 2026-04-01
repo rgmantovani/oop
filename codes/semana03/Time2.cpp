@@ -18,6 +18,16 @@ Time::Time(int hr, int min, int sec) {
 // --------------------------------------------
 // --------------------------------------------
 
+Time::Time(const Time &other) {
+    hour  = other.hour;
+    minute = other.minute;
+    second = other.second;
+}
+
+
+// --------------------------------------------
+// --------------------------------------------
+
 void Time::setTime(int h, int m, int s) {
     setHour(h);
     setMinute(m);
