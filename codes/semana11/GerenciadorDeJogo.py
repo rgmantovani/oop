@@ -1,4 +1,3 @@
-# ❌ Cada sistema cria seu próprio GerenciadorDeJogo
 
 class GerenciadorDeJogo:
     def __init__(self):

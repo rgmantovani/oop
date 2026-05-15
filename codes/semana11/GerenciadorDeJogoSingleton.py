@@ -3,10 +3,17 @@ from __future__ import annotations
 
 class GerenciadorDeJogo:
 
+    # ou é uma instancia de Gerenciador de Jogo ou None, mas por default é None
     _instancia: GerenciadorDeJogo | None = None
 
+    # método especial que cria o objeto antes do __init__
+    # __new__ cria o objeto
+    # __init__ inicializa o objeto
     def __new__(cls) -> GerenciadorDeJogo:
         if cls._instancia is None:
+
+            # chama o __new__ da classe pai (object)
+            # equivale a : object.__new__(cls)
             cls._instancia = super().__new__(cls)
             cls._instancia._inicializado = False
         return cls._instancia
