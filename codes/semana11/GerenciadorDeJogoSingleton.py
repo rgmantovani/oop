@@ -80,6 +80,10 @@ if __name__ == "__main__":
     masmorra.derrotar_chefe()                      # nivel=2 pontos=500 ouro=0
     loja.vender_espolio()                          # nivel=2 pontos=500 ouro=120
     quadro.completar_missao("A Mina Maldita")      # nivel=2 pontos=700 ouro=170
+    masmorra.derrotar_chefe()                      # nivel=3 pontos=1200 ouro=170
+    quadro.completar_missao("O Retorno do Herói")   # nivel=3 pontos=1400 ouro=220
+    loja.vender_espolio()                          # nivel=3 pontos=1400 ouro=340
+    quadro.completar_missao("A Busca do Tesouro")   # nivel=3 pontos=1600 ouro=390
 
     # Prova: mesmo objeto em memória
     a = GerenciadorDeJogo()

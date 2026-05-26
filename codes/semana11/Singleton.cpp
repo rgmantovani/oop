@@ -58,9 +58,14 @@ int main(int argc, char* argv[]) {
 
     Singleton* a = Singleton::Instance();
     Singleton* b = Singleton::Instance();
+    Singleton* c = Singleton::Instance();
+    Singleton* d = Singleton::Instance();
+    
 
     cout << "nome de A: " << a->getName() << endl;
     cout << "nome de B: " << b->getName() << endl;
+    cout << "nome de C: " << c->getName() << endl;
+    cout << "nome de D: " << d->getName() << endl;
 }
 
 // -------------------------------------------

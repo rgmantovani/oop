@@ -1,5 +1,5 @@
 class Singleton:
-    
+
     _instance = None
 
     def __init__(self, name: str):
@@ -18,6 +18,10 @@ class Singleton:
 if __name__ == "__main__":
     a = Singleton.Instance()
     b = Singleton.Instance()
+    c = Singleton.Instance()
+    d = Singleton.Instance()
 
     print(f"nome de A: {a.getName()}")
     print(f"nome de B: {b.getName()}")
+    print(f"nome de C: {c.getName()}")
+    print(f"nome de D: {d.getName()}")
