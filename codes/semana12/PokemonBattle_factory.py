@@ -1,7 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from dataclasses import dataclass, field
-
+from dataclasses import dataclass
 
 # ── Produto base ──────────────────────────────────────────
 @dataclass
@@ -10,6 +9,7 @@ class Pokemon(ABC):
     hp:     int
     attack: int
 
+    # contrato: toda subclasse DEVE implementar
     @abstractmethod
     def use_move(self) -> None: ...
 
@@ -57,7 +57,7 @@ class PokemonFactory:
         name: str,
         hp: int,
         attack: int,
-    ) -> Pokemon:
+    ) -> Pokemon:  # ←retorna o tipo abstrato
         if poke_type not in cls._registry:
             raise ValueError(
                 f"Tipo {poke_type!r} nao existe na Pokedex!")
